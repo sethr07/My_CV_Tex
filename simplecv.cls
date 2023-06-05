@@ -62,6 +62,27 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubHeadingWithPromoitions}[8]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#6} & \textit{\small #7} \\
+    \end{tabular*}
+    \begin{itemize}
+      #8
+    \end{itemize}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \begin{itemize}
+      #5
+    \end{itemize}\vspace{-7pt}
+}
+
+
+
+
+
 
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-2pt}\item
@@ -105,3 +126,4 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
