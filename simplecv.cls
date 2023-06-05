@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{simplecv}[2023/06/05 My custom CV class]
-\LoadClass{article}
+\LoadClass[letterpaper,11pt]{article}
 
 \RequirePackage{titlesec}
 \titleformat{\section}         % Customise the \section command 
@@ -63,26 +63,21 @@
 }
 
 \newcommand{\resumeSubHeadingWithPromoitions}[8]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#6} & \textit{\small #7} \\
     \end{tabular*}
-    \begin{itemize}
+    \begin{itemize}\vspace{-7pt}
       #8
     \end{itemize}
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}
-    \begin{itemize}
+    \begin{itemize}\vspace{-7pt}
       #5
     \end{itemize}\vspace{-7pt}
 }
-
-
-
-
-
 
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-2pt}\item
