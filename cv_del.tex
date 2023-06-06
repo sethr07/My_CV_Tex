@@ -1,0 +1,162 @@
+\documentclass{simplecv}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+\usepackage{mathptmx} % for Times font
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Content here 
+\begin{document}
+
+% Heading 
+
+\begin{center}
+    \textbf{\Huge \scshape Rahul Seth} \\ \vspace{3pt}
+    \small
+    \faMobile\hspace{.5pt} \href{tel:919717861405}{+91 9717861405}
+    $|$
+    \faAt\hspace{.5pt} \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com}
+    $|$
+    \faLinkedinSquare\hspace{.5pt} \href{https://www.linkedin.com/in/rahuls7}{LinkedIn}
+    $|$
+    \faGithub\hspace{.5pt} \href{https://github.com/sethr07}{GitHub}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{}{Gurgaon, Haryana}
+\end{center}
+
+% Education
+
+\section{Education}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Trinity College, Dublin}{Ireland}
+    {BAI Computers and Electronics Engineering}{2018 \textbf{--}2022}
+
+    \resumeProjectHeading{\textbf{Dissertation: ``Surveying Long-Term Cryptographic Keys in Ireland"} $|$ \emph{\href{https://github.com/sethr07/Final-Year-Project}{\color{blue}GitHub}}}{}
+    \resumeItemListStart
+        \resumeItem{Developed network scanner to identify and survey mail servers in Ireland, extracting and processing cryptographic data.}
+        \resumeItem{Modelled and modelled public key sharing for 20000 servers across all standard ports by clustering on SHA-256 fingerprint}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+% Work Ex
+\section{Work Experience}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+
+    \resumeSubHeadingWithPromoitions
+    {Baker Hughes}
+    {Ireland}
+    {Graduate Software Engineer}
+    {Aug'22 \textbf{--} Mar'23}
+    {
+        \resumeItem{Created a HMI emulator for debugging, lauded by stakeholders. Reduced hardware reliance, accelerated feature dev, and chosen for client training.}
+        \resumeItem{Automated image-to-hex conversion and project builds using Python, ensuring seamless feature development; Saving 2 hrs per feature}
+        \resumeItem{Optimised Agile boards by decomposing user stories into tasks and coordinating sprints; increased productivity by 8\%.}
+    }
+    {Software Engineer}
+    {Mar'23 \textbf{--} Present}
+    {
+        \resumeItem{Spearheaded design and development of an enhanced UI/UX for a legacy oxygen sensor, leading to the modernization of the product.}
+        \resumeItem{Developed a feature-rich LCD interface with user-friendly navigation and optimized code architecture in \textbf{C}, improving UX.}
+        \resumeItem{Initiated the implementation of CI/CD with Parasoft on GitHub, automating code analysis and significantly reducing rework by 29\%.}
+        \resumeItem{Enhanced system functionality and user interaction by integrating the bootloader and linking Data Manager with HMI.}
+        \resumeItem{Established standardized design practices with other engineers, developing a globally accessible Python-based icon library to unify visual elements across products.}
+    }
+
+    \resumeSubheading{Ericsson}{India}
+    {AI/ML Intern}{{Jun'21 \textbf{--} Aug'21}}
+    \resumeItemListStart
+        \resumeItem{Analysed large datasets; applied ML models like Linear Regression, Decision Trees, and AdaBoost for predictive analysis.}
+        \resumeItem{Utilised 5 performance metrics including recall, f1score, precision, accuracy and ROC curves to assess the performance.}
+        \resumeItem{Applied K-Means algorithm on the historical IT dataset; hyper-tuned the model using elbow curves, and silhouette method to identify optimal clusters.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Lepton Software}{India}
+    {Market Research Intern}{{Jun'19 \textbf{--} Aug'19}}
+    \resumeItemListStart
+        \resumeItem{Leveraged advanced Excel functions like vlookups, pivot tables, and sorts to perform in-depth analysis of 5G market data.}
+        \resumeItem{Presented to stakeholders a strategy on how Lepton can differentiate itself from competitors by leveraging services they offer.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+% Projects 
+\section{Projects and Activities}
+    \vspace{2pt}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading{BCG Gamma Experience}{Virtual}
+    {Data Science}{{Jun'23}}
+    \resumeItemListStart
+        \resumeItem{Enhanced understanding of problem-solving processes and working with challenging data analysis tasks.}
+        \resumeItem{Developed practical experience in business problem framing, exploratory data analysis, feature engineering, predictive modeling, and turning insights into business decisions.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Formula Trinity AI}{Ireland}
+    {State Estimation and Path Planning}{{Nov'20 \textbf{--} May'22}}
+    \resumeItemListStart
+        \resumeItem{Improved sensor data accuracy in autonomous racing car systems by implementing Particle and Kalman filters for noise reduction.}
+        \resumeItem{Optimized racing line selection using A* and Dijkstra's algorithms for maximum performance and speed in autonomous racing cars.}
+        \resumeItem{Mentored new recruits in Python, ROS, and state estimation algorithms, enabling their seamless integration into the team.}
+    \resumeItemListEnd
+
+     \resumeProjectHeading{\textbf{Email Client}}{}
+    \resumeItemListStart
+        \resumeItem{Designed an email client for macOS (Unix) architectures; incorporated features like login, search, compose and schedule send}
+        \resumeItem{Implemented the backend and API calls using Python and utilised Kivy for UI design}
+    \resumeItemListEnd
+
+ 
+    \resumeSubHeadingListEnd
+
+% Skills
+\section{Skills}
+\vspace{3pt}
+\resumeSubHeadingListStart
+\small{\item{
+    \textbf{Programming: }{C, C++, Python, SQL, XML, Git, Matlab, Verilog, JavaScript, R, Static Analysis, OOP, TeX.} \\ \vspace{3pt}
+
+    \textbf{Technologies: }{GitHub, IAR, Parasoft, PostreSQL, Visual Studio, Linux, Wireshark, SPSS, Protoge, MS Office.}
+}}
+\resumeSubHeadingListEnd
+
+\end{document}
