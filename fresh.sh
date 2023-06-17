@@ -28,11 +28,4 @@ else
   git clone --depth 1 --branch "$branch" "$repo_url" "$destination_dir"
 fi
 
-# Move to the repository directory
-cd "$destination_dir"
-
-# Delete all files except the ones in keep_files array
-keep_files=("cv.pdf" "cv_del.pdf")
-shopt -s extglob
-rm -v !("cv.pdf"|"cv_del.pdf")
 
