@@ -2,4 +2,4 @@
 
 Tex file for my CV
 
-Updated: 5/6/23
+Updated: 17/6/23
