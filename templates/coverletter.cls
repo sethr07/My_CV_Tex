@@ -16,23 +16,26 @@
 
 \newcommand{\name}[1]{%
   \begin{center}
-    \Huge\textbf{\scshape #1}
+    \fontsize{28pt}{32pt}\selectfont\textbf{\scshape #1}
   \end{center}
-  \vspace{1em}
+  
   \begin{center}
     \small
-    \faLinkedinSquare\hspace{.5pt} \href{https://www.linkedin.com/in/rahuls7}{LinkedIn} \quad
+    \faMobile\hspace{.5pt} \href{tel:919717861405}{+91 9717861405} \quad
+    \faAt\hspace{.5pt} \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com} \quad
     \faMapMarker \hspace{.5pt} \href{}{Gurgaon, Haryana} \quad
+    \faLinkedinSquare\hspace{.5pt} \href{https://www.linkedin.com/in/rahuls7}{LinkedIn} \quad
     \faGithub\hspace{.5pt} \href{https://github.com/sethr07}{GitHub} \quad
-    \faMobile\hspace{.5pt} \href{tel:919717861405}{+353 9717861405} \quad
-    \faAt\hspace{.5pt} \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com}
   \end{center}
   \hrule % Add a horizontal line after the details
+  \vspace{10pt}
 }
 
-\newcommand{\subject}[1]{%
+\newcommand{\companyname}[1]{\def\@companyname{#1}}
+
+\newcommand{\subject}[2]{%
   \begin{flushleft}
-    \textbf{RE:} #1
+    \textbf{RE:} Software Engineer Role @ Zomoato
   \end{flushleft}
 }
 
@@ -42,13 +45,25 @@
   \end{flushleft}
 }
 
-\newcommand{\lettercontent}[1]{%
+\newcommand{\opening}[1]{%
+  \begin{flushleft}
+    #1
+  \end{flushleft}
+}
+
+\newcommand{\conclusion}[1]{
+  \begin{flushleft}
+    #1
+  \end{flushleft}
+}
+
+\newcommand{\workex}[1]{%
   \begin{flushleft}    
     #1
   \end{flushleft}
 }
 
-\newcommand{\conclusion}{%
+\newcommand{\closing}{%
   \begin{flushleft}
     Thank you for considering my application. I look forward to the possibility of contributing to your organization's success.
   \end{flushleft}
@@ -63,44 +78,12 @@
   \vspace{2em}
 }
 
-
-\newcommand\contact[5]{%
-    \centerline{%
-        \makebox[0pt][c]{%
-            #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
-            \ #4 \ \ #5%
-        }%
-    }%
-}
-
-\newcommand{\longcontact}[5]{%
-    \noindent
-    #1\hfill {\large\textperiodcentered}\hfill #2\hfill
-    {\large\textperiodcentered}\hfill #3\\
-    #4\hfill #5%
-}
-
-\newcommand{\datedsection}[2]{%
-  \section[#1]{#1 \hfill #2}%
-}
-
-\newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{#1 \hfill #2}%
-}
-
-\newcommand{\workitems}[3]{%
-    \begin{itemize}
-    \item #1
-    \item #2
-    \item #3
-    \end{itemize}%
-}
-
 \newcommand{\signature}[1]{%
   \vfill
   \raggedright
-  Sincerely,\\
+  \fontsize{14pt}{17pt}\selectfont\textbf{Sincerely,}\\
   #1
 }
+
 
 % End of coverletter.cls
