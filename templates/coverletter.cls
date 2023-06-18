@@ -34,7 +34,7 @@
 
 \newcommand{\subject}[2]{%
   \begin{flushleft}
-    \textbf{RE:} Software Engineer Role @ Zomoato
+    \textbf{RE:} #1 at #2
   \end{flushleft}
 }
 
