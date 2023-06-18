@@ -53,6 +53,12 @@
   }
 }
 
+\newcommand{\coursework}[1]{
+  \vspace{6pt}
+  \textit{\small\textbf{Coursework:} #1}
+  }
+
+
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
