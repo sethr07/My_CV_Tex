@@ -21,11 +21,10 @@
   
   \begin{center}
     \small
-    \faMobile\hspace{.5pt} \href{tel:919717861405}{+91 9717861405} \quad
-    \faAt\hspace{.5pt} \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com} \quad
-    \faMapMarker \hspace{.5pt} \href{}{Gurgaon, Haryana} \quad
-    \faLinkedinSquare\hspace{.5pt} \href{https://www.linkedin.com/in/rahuls7}{LinkedIn} \quad
-    \faGithub\hspace{.5pt} \href{https://github.com/sethr07}{GitHub} \quad
+    \faMobile\hspace{.5pt} \href{tel:353873907378}{+353 873907378} \quad
+    \faAt\hspace{.5pt} \href{mailto:harshwardhandadel50@gmail.com@gmail.com}{harshwardhandadel50@gmail.com} \quad
+    \faMapMarker \hspace{.5pt} \href{}{Dublin, Ireland} \quad
+    \faLinkedinSquare\hspace{.5pt} \href{ttps://www.linkedin.com/in/dadel/}{LinkedIn} \quad
   \end{center}
   \hrule % Add a horizontal line after the details
   \vspace{10pt}
