@@ -35,13 +35,13 @@
 
 \newcommand{\subject}[2]{%
   \begin{flushleft}
-    \textbf{RE:} Software Engineer Role @ Zomoato
+    \textbf{RE:} #1 Role 
   \end{flushleft}
 }
 
 \newcommand{\greeting}{%
   \begin{flushleft}
-    \textbf{Dear Hiring Manager,}
+    \textbf{Dear Akshit,}
   \end{flushleft}
 }
 
