@@ -28,7 +28,7 @@
 2.
 
 
-PayTm:
+PayTm: <br />
 *Brief*:
 Paytm, an acronym for "Pay Through Mobile," is an Indian digital payments and technology company. It was launched in 2010 by One97 Communications and has since become one of the 
 largest platforms for digital payments in India.
