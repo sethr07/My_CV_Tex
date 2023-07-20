@@ -33,14 +33,30 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\usepackage{xcolor}
+\definecolor{timberwolf}{rgb}{0.86, 0.84, 0.82}
 
 \companyname{Oliver Wyman, Marsh McLennan}
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+\usepackage[pages=some]{background}
+\backgroundsetup{
+  scale=1,       %% change accordingly
+  color=black,   %% change accordingly
+  opacity=1,     %% change accordingly
+  angle=0,       %% change accordingly
+  contents={%
+  \begin{tikzpicture}[remember picture,overlay]
+  \path [fill] (current page.south west) rectangle (current page.north east);
+  \end{tikzpicture}}
+}
+
+
 % Content here 
 \begin{document}
+\BgThispage
 
 \onehalfspacing
 

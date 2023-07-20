@@ -16,16 +16,18 @@
 
 \newcommand{\name}[1]{%
   \begin{center}
-    \fontsize{28pt}{32pt}\selectfont\textbf{\scshape #1}
+    \textcolor{timberwolf}{\fontsize{28pt}{32pt}\selectfont\textbf{\scshape #1}}
   \end{center}
   
   \begin{center}
     \small
+    \textcolor{timberwolf}{
     \faMobile\hspace{.5pt} \href{tel:919717861405}{+91 9717861405} \quad
     \faAt\hspace{.5pt} \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com} \quad
     \faMapMarker \hspace{.5pt} \href{}{Gurgaon, Haryana} \quad
     \faLinkedinSquare\hspace{.5pt} \href{https://www.linkedin.com/in/rahuls7}{LinkedIn} \quad
     \faGithub\hspace{.5pt} \href{https://github.com/sethr07}{GitHub} \quad
+    }
   \end{center}
   \hrule % Add a horizontal line after the details
   \vspace{10pt}
@@ -35,31 +37,31 @@
 
 \newcommand{\subject}[2]{%
   \begin{flushleft}
-    \textbf{RE:} #1 Role 
+    \textcolor{timberwolf}{\textbf{RE:} #1 Role}
   \end{flushleft}
 }
 
 \newcommand{\greeting}{%
   \begin{flushleft}
-    \textbf{Dear Akshit,}
+    \textcolor{timberwolf}{\textbf{Dear Hiring Manager,}}
   \end{flushleft}
 }
 
 \newcommand{\opening}[1]{%
   \begin{flushleft}
-    #1
+    \textcolor{timberwolf}{#1}
   \end{flushleft}
 }
 
 \newcommand{\conclusion}[1]{
   \begin{flushleft}
-    #1
+    \textcolor{timberwolf}{#1}
   \end{flushleft}
 }
 
 \newcommand{\workex}[1]{%
   \begin{flushleft}    
-    #1
+    \textcolor{timberwolf}{#1}
   \end{flushleft}
 }
 
@@ -81,8 +83,8 @@
 \newcommand{\signature}[1]{%
   \vfill
   \raggedright
-  \fontsize{14pt}{17pt}\selectfont\textbf{Sincerely,}\\
-  #1
+  \textcolor{timberwolf}{\fontsize{14pt}{17pt}\selectfont\textbf{Sincerely,}\\
+  #1}
 }
 
 
