@@ -7,6 +7,8 @@
 \LoadClass[12pt, oneside]{article}
 
 \RequirePackage{titlesec}
+\RequirePackage{enumitem}
+
 \titleformat{\section}         % Customise the \section command 
   {\Large\scshape\raggedright} % Make the \section headers large (\Large),
                                % small capitals (\scshape) and left aligned (\raggedright)
@@ -35,7 +37,7 @@
 
 \newcommand{\subject}[2]{%
   \begin{flushleft}
-    \textbf{RE:} Software Engineer Role @ Zomoato
+    \textbf{RE:} Technical Business Analyst @ The Economist Group
   \end{flushleft}
 }
 
@@ -59,13 +61,15 @@
 
 \newcommand{\workex}[1]{%
   \begin{flushleft}    
+    \begin{description}[style=unboxed, labelwidth=0cm, labelsep=0.5em, leftmargin=0.0cm, font=\normalfont\bfseries, align=left]
     #1
+    \end{description}
   \end{flushleft}
 }
 
 \newcommand{\closing}{%
   \begin{flushleft}
-    Thank you for considering my application. I look forward to the possibility of contributing to your organization's success.
+    Thank you for considering my application. I'm looking forward to discuss the role further.
   \end{flushleft}
 }
 
