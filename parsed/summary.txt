@@ -1,0 +1,11 @@
+I am currently working as a Software Engineer at Baker Hughes where I develop software for embedded devices. Currently, working in 
+an agile team to revitalize software for a legacy process analyzer. I currently work mostly with C, Python, Bash, some devops like
+doing the github workflows. Outside my primary project, I look to contribute to improving software practices and collabrate with my peers 
+to develop and collate shared knowledge repositarys that other developers across the organisation use it as a starting projects. I have 
+also worked closely with product managers to translate functional requirements to technical. 
+
+I like code with Python for my personal projects mainly on with data analysis, tools like resume builder I made with Python. Currently learning 
+Django wito upgrade using frontend from Kivy. I have also done and internship with Ericsson with the AI/ML team. 
+
+My resume can be found here:
+My email is: srahulseth7@gmail.com
