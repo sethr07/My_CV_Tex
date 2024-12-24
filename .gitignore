@@ -1,5 +1,9 @@
-# LaTeX
+# Directories
+.vscode/
+.DS_Store
 
+
+# LaTeX
 /*.aux
 /*.log
 /*.synctex.gz
