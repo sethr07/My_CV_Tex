@@ -14,15 +14,14 @@
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \input{glyphtounicode}
-\usepackage{mathptmx} % for Times font
+\usepackage{mathptmx}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.75in}
 \addtolength{\evensidemargin}{-0.75in}
 \addtolength{\textwidth}{1.5in}
@@ -33,114 +32,108 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Optimize itemize spacing
 \setlist{nosep}
 \setlist[itemize]{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=0pt}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-% Content here 
 \begin{document}
 
-% Heading 
 \begin{center}
-    \begin{center}
-        \small
-        \faMobile\hspace{.5pt} \href{tel:919717861405}{+91 919717861405} \quad
-        \faAt\hspace{.5pt} \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com} \quad
-        \textbf{\Huge \scshape Rahul Seth} \quad
-        \faGithub\hspace{.5pt} \href{https://github.com/sethr07}{GitHub} \quad
-        \faLinkedinSquare\hspace{.5pt} \href{https://www.linkedin.com/in/rahuls7}{LinkedIn} \quad
-        \faMapMarker \hspace{.5pt} Gurgaon, Haryana
-    \end{center}
+    \small
+    \faMobile\hspace{.5pt} \href{tel:919717861405}{+91 9717861405} \quad
+    \faAt\hspace{.5pt} \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com} \quad
+    \textbf{\Huge \scshape Rahul Seth} \quad
+    \faGithub\hspace{.5pt} \href{https://github.com/sethr07}{GitHub} \quad
+    \faLinkedinSquare\hspace{.5pt} \href{https://www.linkedin.com/in/rahuls7}{LinkedIn} \quad
+    \faMapMarker \hspace{.5pt} Gurgaon, Haryana
 \end{center}
 
-% Professional Summary
 \section{Summary}
 \resumeSubHeadingListStart
-\resumeSummary{Software Engineer with proven leadership bridging embedded SW (STM32, Modbus/BLE) and intuitive UI design. 
-Skilled in collaborating with product management and HW teams to deliver high-impact releases and enhanced user experiences 
-under tight deadlines}
+\resumeSummary{Results-driven engineer who turns tough specs into reliable releases. In 2 years I’ve led teams that shipped firmware 
+for 5 embedded products in the energy sector, owning reviews and tightening CI/CD so features hit the field faster and safer.
+Obsessed with removing bottlenecks, I built internal tools that cut effort by 80\% and designed end-to-end UIs for 2 products in C/C++.
+Off the clock, I volunteer with NGOs, creating AI-powered automations that magnify their impact.}
 
 \resumeSubHeadingListEnd
 
-% Work Ex
-\section{Work Experience}
-    \resumeSubheading{Baker Hughes}{India}{Software Engineer}{Sep'23 \textbf{--} Present}
-    \resumeItemListStart
-        \resumeItem{Relocated from Ireland to India, taking on leadership for 1 project and consulting responsibilities for 3}
-        \resumeItem{Led product release \& managed technical delivery across 4 projects in 2 years; contributed to PDRs, SRSs, \& implementation}
-        \resumeItem{Standardized 10+ hygrometry algorithms and created reusable documentation for future product development}
-        \resumeItem{Spearheading frontend design for a state-of-the-art hygrometer, leveraging TouchGFX \& Figma to deliver a modern, interactive UI}
-        \resumeItem{Created tasks in Micrium 3 to integrate TouchGFX with the application; gained exposure to RTOS operations}
-        \resumeItem{Authored 4 design records in 1 year, spanning diverse topics including proprietary algorithms to image conversion scripts}
-        \resumeItem{Led DevOps initiatives; integrated Parasoft test framework using GitHub Actions, \& optimized build automation using scripts}
-        \resumeItemListEnd
-    
-        \resumeSubheading{Global Strategic Law Council}{India}{Pro Bono Consultant}{Jan'25 \textbf{--} Present}
-        \resumeItemListStart
-            \resumeItem{GSLC is an NGO empowering communities \& advancing social impact; providing pro bono law aid to those affected by climate change}
-            \resumeItem{Developed an AI-based case summarizer powered by OpenAI, hosted on a React-based website, supporting GSLC’s legal workflows}
-        \resumeItemListEnd
 
-    \resumeSubheading{Baker Hughes}{Ireland}{Software Engineer}{Aug'22 \textbf{--} Aug'23}
-    \resumeItemListStart
-        \resumeItem{Joined as a Graduate Software Engineer and was rapidly promoted to SWE 1 within 5 months}
-        \resumeItem{Part of smart analyzers projects; worked in a hybrid Agile environment \& used Agile tools for feature breakdown}
-        \resumeItem{Developed backend simulation services using Python, optimizing data processing and automation pipelines}
-        \resumeItem{Created the product line’s first icon-based GUI, optimized for small monochrome displays; reduced user errors by 30\%}
-    \resumeItemListEnd
-
-    \resumeSubheading{Ericsson}{India}{AI Intern}{Jun'21 \textbf{--} Aug'21}
-    \resumeItemListStart
-        \resumeItem{Implemented a clustering-based query classifier to categorize internal IT requests, enabling efficient routing and resolution of issues}
-        \resumeItem{Implemented NLP preprocessing, TF-IDF vectorization (Scikit-learn \& NLTK), followed by k-means clustering for query classification}
-    \resumeItemListEnd
-
-% Projects 
-\section{Key Projects}
-    
-    \resumeSubheading{HygroPro XP - Smart Moisture Analyzer}{India}{Lead Engineer}{Jan'24 \textbf{--} Oct'24}
-    \resumeItemListStart
-        \resumeItem{Took over mid-project after lead's departure, launched 2 major releases; \$500K generated within 6 months}  
-        \resumeItem{Led a team of 3 developers, delivering 10 high-priority features and resolving 20+ bugs for the second release}  
-        \resumeItem{Developed Python-based data processing service for sensor analytics; reduced testing time by 1 month \& improved accuracy by 15\%}
-        \resumeItem{Improved code modularity \& application reliability by refactoring a monolithic 6000-line file; reduced its size by 33\%}
-    \resumeItemListEnd
-
-    \resumeSubheading{XMTCpro - Smart Gas Analyzer}{Ireland, India}{Consulting Engineer}{Aug'22 \textbf{--} Sep'24}
-    \resumeItemListStart
-        \resumeItem{Designed \& developed the complete UI/UX, encompassing 17 menu types \& 12 core features; generated \$400K+ revenue in 2 months}  
-        \resumeItem{Partnered with product and technology teams to develop features \& workflows focused on minimizing user errors}  
-        \resumeItem{Resolved 70+ bugs, including 40 critical issues within a focused 2-month period, significantly improving software stability}  
-        \resumeItem{Led SAST \& OSAT reviews for 7+ software releases, ensuring compliance and owning frontend design reviews}
-        \resumeItem{Oversaw static analysis (MISRA C compliance) \& collaborated with an external agency to achieve SIL 2 certification}
-    \resumeItemListEnd
-
-% Education
-    \section{Education}
-        \resumeSubheading{Trinity College, Dublin}{Ireland}{BAI Computers and Electronics Engineering}{2018 \textbf{--}2022}
-        \resumeItemListStart
-        \resumeItem{\textbf{Dissertation:} Survey \& analysis of cryptographic keys on port 25 using Python to identify weak keys and improve security}
-        \resumeItem{\textbf{Activities:} Indian Society, Formula Trinity, Voluntary Tuition Program}
-        \resumeItem{Group project ranked Top 5 in class, advanced to EU competition. Developed a sustainable water solution for water-scarce countries}
-    \resumeItemListEnd
-    
-
-% Skills
-\section{Skills}
-\vspace{3pt}
+\section{Technical Skills}
 \resumeSubHeadingListStart
 \small{\item{
-    \textbf{Programming: }{Python, C/C++, XML, SQL, Git, Shell/Batch, JavaScript, TeX, Static Analysis} \\ \vspace{3pt}
-    \textbf{Technologies: }{Figma, IAR, Parasoft, PostgreSQL, Linux, React, Protege, TouchGFX, Git Workflows}
+    \textbf{Languages: } C, C++, Python, JavaScript, XML, SQL, Bash, LaTeX \\
+    \textbf{Embedded Tooling: } STM32, TouchGFX, CubeMX, RTOS, Modbus \\
+    \textbf{Frameworks/Tools: } Visual Studio, GCC, IAR, Parasoft, React, Electron, LangChain, FastAPI, Protege \\
+    \textbf{DevOps/Infra: } Git, GitHub Actions, Make/CMake, Shell/Batch, PostgreSQL, Linux/Windows, Agile/Scrum \\
 }}
 \resumeSubHeadingListEnd
 
+
+\section{Work Experience}
+\resumeSubheading{Baker Hughes}{India}{\textbf{Software Engineer}}{Sep'23 -- Present}
+\resumeItemListStart
+    \resumeItem{Relocated from Ireland to India, taking on \textbf{leadership for 1 project} and \textbf{consulting on 3 others}}
+    \resumeItem{2+ years shipping C/C++ firmware across 5 embedded products; now spearheading the shift to C++ for the next-gen platform}
+    \resumeItem{Architecting next-gen TouchGFX UI for 2 upcoming products; expected \textbf{20\% RAM savings} and \textbf{30\% fewer navigation steps}} 
+    \resumeItem{Standardized 10+ hygrometry algorithms into a shared library, eliminating \textbf{25\% duplicate code} and trimming validation time by \textbf{50\%}}
+    \resumeItem{Embedded Parasoft MISRA C/C++ checks in GitHub Actions, reducing manual-review defects by \textbf{40\%} and tripling build throughput}
+    \resumeItem{Authored 4 design records that became team templates for algorithm architecture, deployment automation and graphics conversion}
+\resumeItemListEnd
+
+\resumeSubheading{Global Strategic Law Council}{India}{\textbf{Pro Bono Full Stack Developer}}{Jan'25 -- Present}
+\resumeItemListStart
+    \resumeItem{Developed and deployed a React + FastAPI case-summarizer that ingests legal PDFs, uses Gemini to produce digestible briefs}
+    \resumeItem{Slashed attorney review time by \textbf{83\%}; from 30 min to 5 min - on 20 cases each week, freeing \textbf{8 lawyer-hours weekly}}
+    \resumeItem{Automated onboarding + Mailchimp sync with Apps Script, slashing spreadsheet upkeep \textbf{80\%} and saving \textbf{3 hrs/week}}
+\resumeItemListEnd
+
+
+\resumeSubheading{Baker Hughes}{Ireland}{\textbf{Software Engineer}}{Aug'22 -- Aug'23}
+\resumeItemListStart
+    \resumeItem{\textbf{Promoted} from Graduate Engineer to SWE 1 in \textbf{5 months}, outperforming a cohort of \textbf{6} peers}
+    \resumeItem{Built Visual-Studio-based simulation services that replicate sensor I/O and fault states, cutting bench-test turnaround by \textbf{30\%}}
+    \resumeItem{Designed the product line’s first icon-based UI; reduced navigation errors by \textbf{30\%} and trimmed onboarding time for field techs by \textbf{4 hrs}}
+\resumeItemListEnd
+
+
+\section{Education}
+\resumeSubheading{Trinity College, Dublin}{Ireland}{\textbf{BAI Computers and Electronics Engineering}}{2018 -- 2022}
+\resumeItemListStart
+    \resumeItem{\textbf{Dissertation:} Surveyed cryptographic keys on SMTP port 25, built Python toolchain to flag weak keys}
+    \resumeItem{\textbf{Activities:} VP Indian Society, Lead Engineer Formula Trinity, Lead Voluntary Tuition Program}
+    \resumeItem{Capstone project ranked \textbf{Top 5 in class}, advanced to EU competition; built a sustainable water solution}
+\resumeItemListEnd
+
+\newpage
+
+\section{Key Projects}
+\resumeSubheading{GraphicsEngine – Embedded UI Code Generator}{India}{\textbf{Personal Initiative}}{Mar'25 -- Present}
+\resumeItemListStart
+    \resumeItem{Conceived and led a design-to-code pipeline converting Figma SVGs into C/C++ for 128×64 LCD UIs, unifying fragmented workflows}
+    \resumeItem{Implemented the generator with Python and a React + Electron front-end, packaging everything into a cross-platform executable}
+    \resumeItem{Integrated 2 legacy tools (CSV \& StringDot) and rolled the solution out to \textbf{3 product teams}}
+    \resumeItem{Cut screen-development effort by \textbf{60\%} and new-developer onboarding time by \textbf{40\%}}
+\resumeItemListEnd
+
+\resumeSubheading{HygroPro XP – Smart Moisture Analyzer}{India}{\textbf{Lead Engineer}}{Jan'24 -- Oct'24}
+\resumeItemListStart
+    \resumeItem{Took over a stalled mid-project and launched \textbf{2 major firmware releases} that generated \textbf{\$500K in 6 months}}
+    \resumeItem{Led a 3-engineer squad, shipping \textbf{10 high-priority features} and clearing \textbf{20+ critical bugs} on schedule}
+    \resumeItem{Built a Python sensor-analytics microservice that cut the test cycle by \textbf{4 weeks} and boosted calibration accuracy \textbf{15\%}}
+    \resumeItem{Refactored a \textbf{6000-line monolith} into modular components, trimming code size \textbf{33\%} and easing future maintenance}
+\resumeItemListEnd
+
+\resumeSubheading{XMTCpro – Smart Gas Analyzer}{Ireland, India}{\textbf{Consulting Engineer}}{Aug'22 -- Sep'24}
+\resumeItemListStart
+    \resumeItem{Led UI/UX design for 17 menus and 12 features in close collaboration with product managers and engineering}
+    \resumeItem{Partnered with PC-software team to align desktop and embedded workflows; drove \textbf{\$400K+} revenue within 2 months of launch}
+    \resumeItem{Closed \textbf{70+ defects} (40 critical) during a focused 2-month stabilization sprint, pushing field build stability above \textbf{99\%}}
+    \resumeItem{Partnered with desktop engineers to create a shared Figma component library, cutting cross-platform UI rework by \textbf{25\%}}
+    \resumeItem{Drove SAST \& OSAT reviews across seven releases, maintained MISRA-C compliance, and coordinated SIL-2 certification audits}
+\resumeItemListEnd
 \end{document}
