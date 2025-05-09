@@ -56,9 +56,9 @@
 
 \newcommand{\resumeSubheading}[4]{
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{#2} \\
+      \textbf{#1} & \textbf{#2} \\[3pt]
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{2pt}
+    \end{tabular*}\vspace{4pt}
 }
 
 \newcommand{\resumeSubHeadingWithPromoitions}[8]{
@@ -125,7 +125,7 @@
 \newcommand{\resumeSummary}[1]{
   \vspace{-2pt}\item
   \begin{tabular*}{0.97\textwidth}{p{0.97\textwidth}}
-    \small#1
+    \small\linespread{1.3}\selectfont#1
   \end{tabular*}\vspace{-5pt}
 }
 
