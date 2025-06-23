@@ -8,7 +8,7 @@
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
+  [\titlerule \vspace{-5pt}]   % Inserts a horizontal line after the heading and adds some vertical space
 
 
 
@@ -49,7 +49,7 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{2pt}}
   }
 }
 
@@ -58,7 +58,7 @@
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{#2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{2pt}
 }
 
 \newcommand{\resumeSubHeadingWithPromoitions}[8]{
@@ -116,8 +116,18 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{4pt}}
+
+% New command for summary section
+\newcommand{\resumeSummary}[1]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{p{0.97\textwidth}}
+    \small#1
+  \end{tabular*}\vspace{-5pt}
+}
+
+% End of file
 

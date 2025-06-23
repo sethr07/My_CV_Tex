@@ -29,10 +29,13 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
+% Optimize itemize spacing
+\setlist{nosep}
+\setlist[itemize]{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=0pt}
 
 % Sections formatting
 \titleformat{\section}{
@@ -58,24 +61,40 @@
     \end{center}
 \end{center}
 
+% Professional Summary
+\section{Summary}
+\resumeSubHeadingListStart
+\resumeSummary{Software Engineer with proven leadership bridging embedded SW (STM32, Modbus/BLE) and intuitive UI design. 
+Skilled in collaborating with product management and HW teams to deliver high-impact releases and enhanced user experiences 
+under tight deadlines}
+
+\resumeSubHeadingListEnd
 
 % Work Ex
 \section{Work Experience}
     \resumeSubheading{Baker Hughes}{India}{Software Engineer}{Sep'23 \textbf{--} Present}
     \resumeItemListStart
         \resumeItem{Relocated from Ireland to India, taking on leadership for 1 project and consulting responsibilities for 3}
-        \resumeItem{Led product release and drove technical delivery across 4 projects in 2 years, contributing to features, PDRs, \& SRS}
+        \resumeItem{Led product release \& managed technical delivery across 4 projects in 2 years; contributed to PDRs, SRSs, \& implementation}
         \resumeItem{Standardized 10+ hygrometry algorithms and created reusable documentation for future product development}
-        \resumeItem{Spearheading UI/UX design for a state-of-the-art hygrometer, leveraging TouchGFX \& C to deliver a modern, highly interactive UI}
+        \resumeItem{Spearheading frontend design for a state-of-the-art hygrometer, leveraging TouchGFX \& Figma to deliver a modern, interactive UI}
+        \resumeItem{Created tasks in Micrium 3 to integrate TouchGFX with the application; gained exposure to RTOS operations}
         \resumeItem{Authored 4 design records in 1 year, spanning diverse topics including proprietary algorithms to image conversion scripts}
-    \resumeItemListEnd
+        \resumeItem{Led DevOps initiatives; integrated Parasoft test framework using GitHub Actions, \& optimized build automation using scripts}
+        \resumeItemListEnd
+    
+        \resumeSubheading{Global Strategic Law Council}{India}{Pro Bono Consultant}{Jan'25 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{GSLC is an NGO empowering communities \& advancing social impact; providing pro bono law aid to those affected by climate change}
+            \resumeItem{Developed an AI-based case summarizer powered by OpenAI, hosted on a React-based website, supporting GSLC’s legal workflows}
+        \resumeItemListEnd
 
     \resumeSubheading{Baker Hughes}{Ireland}{Software Engineer}{Aug'22 \textbf{--} Aug'23}
     \resumeItemListStart
         \resumeItem{Joined as a Graduate Software Engineer and was rapidly promoted to SWE 1 within 5 months}
-        \resumeItem{Utilized Figma to design and prototype user interfaces, developed wireframes, interactive prototypes, and detailed user workflows}
-        \resumeItem{Developed a Windows application simulator for rapid prototyping - resulted in early user feedback driving usability}
-        \resumeItem{Created the first icon-based GUI for the product line, significantly improved user experience \& reduced user error by 30\%}
+        \resumeItem{Part of smart analyzers projects; worked in a hybrid Agile environment \& used Agile tools for feature breakdown}
+        \resumeItem{Developed backend simulation services using Python, optimizing data processing and automation pipelines}
+        \resumeItem{Created the product line’s first icon-based GUI, optimized for small monochrome displays; reduced user errors by 30\%}
     \resumeItemListEnd
 
     \resumeSubheading{Ericsson}{India}{AI Intern}{Jun'21 \textbf{--} Aug'21}
@@ -84,36 +103,34 @@
         \resumeItem{Implemented NLP preprocessing, TF-IDF vectorization (Scikit-learn \& NLTK), followed by k-means clustering for query classification}
     \resumeItemListEnd
 
-% Education
-\section{Education}
-    \resumeSubheading{Trinity College, Dublin}{Ireland}{BAI Computers and Electronics Engineering}{2018 \textbf{--}2022}
-    \resumeItemListStart
-    \resumeItem{\textbf{Activities:} Indian Society, Formula Trinity, Voluntary Tuition Program}
-    \resumeItem{Group project ranked Top 5 in class, advanced to EU competition. Developed a sustainable water solution for water-scarce countries}
-    \resumeItemListEnd
-
-
-    
 % Projects 
 \section{Key Projects}
     
-    \resumeSubheading{HygroPro XP - Smart Moisture Analyzer}{India}{Lead Engineer}{Jan'24 - Oct'24}
+    \resumeSubheading{HygroPro XP - Smart Moisture Analyzer}{India}{Lead Engineer}{Jan'24 \textbf{--} Oct'24}
     \resumeItemListStart
-        \resumeItem{Took over project leadership after previous lead’s departure. Drove 2 major releases (Mar '24 \& Oct '24); generated \$500K revenue in 6 months.}  
-        \resumeItem{Led a team of 3 developers, delivering 10 high-priority features and resolving 20+ bugs in the October release.}  
-        \resumeItem{Facilitated design verification reviews, ensuring adherence to industry standards (including MISRA) and high-quality software}
-        \resumeItem{Improved hygrometry algorithm accuracy from 10\% to 3\% using a Python simulator, tested 20+ algorithms, and resolved 4 defects}
-        \resumeItem{Improved code modularity and application reliability by refactoring a monolithic 6000-line file, reducing its size by 33\%}
+        \resumeItem{Took over mid-project after lead's departure, launched 2 major releases; \$500K generated within 6 months}  
+        \resumeItem{Led a team of 3 developers, delivering 10 high-priority features and resolving 20+ bugs for the second release}  
+        \resumeItem{Developed Python-based data processing service for sensor analytics; reduced testing time by 1 month \& improved accuracy by 15\%}
+        \resumeItem{Improved code modularity \& application reliability by refactoring a monolithic 6000-line file; reduced its size by 33\%}
     \resumeItemListEnd
 
-    \resumeSubheading{XMTCpro: Smart Gas Analyzer}{Ireland, India}{Consulting Engineer}{Aug'22 \textbf{--} Sep'24}
+    \resumeSubheading{XMTCpro - Smart Gas Analyzer}{Ireland, India}{Consulting Engineer}{Aug'22 \textbf{--} Sep'24}
     \resumeItemListStart
-        \resumeItem{Designed \& developed the complete UI/UX, encompassing 17 menu types and 12 core features; generated \$400K+ revenue in 2 months.}  
+        \resumeItem{Designed \& developed the complete UI/UX, encompassing 17 menu types \& 12 core features; generated \$400K+ revenue in 2 months}  
         \resumeItem{Partnered with product and technology teams to develop features \& workflows focused on minimizing user errors}  
         \resumeItem{Resolved 70+ bugs, including 40 critical issues within a focused 2-month period, significantly improving software stability}  
-        \resumeItem{Led cybersecurity reviews, ensuring compliance for product launch, and contributed to detailed design reviews.}  
-        \resumeItem{Oversaw static analysis for MISRA C compliance and collaborated with an external agency to achieve SIL 2 certification.}  
-    \resumeItemListEnd 
+        \resumeItem{Led SAST \& OSAT reviews for 7+ software releases, ensuring compliance and owning frontend design reviews}
+        \resumeItem{Oversaw static analysis (MISRA C compliance) \& collaborated with an external agency to achieve SIL 2 certification}
+    \resumeItemListEnd
+
+% Education
+    \section{Education}
+        \resumeSubheading{Trinity College, Dublin}{Ireland}{BAI Computers and Electronics Engineering}{2018 \textbf{--}2022}
+        \resumeItemListStart
+        \resumeItem{\textbf{Dissertation:} Survey \& analysis of cryptographic keys on port 25 using Python to identify weak keys and improve security}
+        \resumeItem{\textbf{Activities:} Indian Society, Formula Trinity, Voluntary Tuition Program}
+        \resumeItem{Group project ranked Top 5 in class, advanced to EU competition. Developed a sustainable water solution for water-scarce countries}
+    \resumeItemListEnd
     
 
 % Skills
@@ -121,8 +138,8 @@
 \vspace{3pt}
 \resumeSubHeadingListStart
 \small{\item{
-    \textbf{Programming: }{Python, C, C++, SQL, XML, Git, Matlab, TeX, Static Analysis, Git Workflows} \\ \vspace{3pt}
-    \textbf{Technologies: }{IAR, Parasoft, PostgreSQL, Linux, SPSS, Protege, Figma, Touch GFX}
+    \textbf{Programming: }{Python, C/C++, XML, SQL, Git, Shell/Batch, JavaScript, TeX, Static Analysis} \\ \vspace{3pt}
+    \textbf{Technologies: }{Figma, IAR, Parasoft, PostgreSQL, Linux, React, Protege, TouchGFX, Git Workflows}
 }}
 \resumeSubHeadingListEnd
 
