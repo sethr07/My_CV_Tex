@@ -129,5 +129,20 @@
   \end{tabular*}\vspace{-5pt}
 }
 
+% New commands for company with multiple roles
+\newcommand{\resumeCompanyRole}[4]{
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeCompanySubRole}[2]{
+  \vspace{4pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{2pt}
+}
+
 % End of file
 
