@@ -125,7 +125,7 @@
 \newcommand{\resumeSummary}[1]{
   \vspace{-2pt}\item
   \begin{tabular*}{0.97\textwidth}{p{0.97\textwidth}}
-    \small#1
+    \normalsize#1
   \end{tabular*}\vspace{-5pt}
 }
 
